@@ -1,0 +1,5 @@
+<!--定位-->
+<view class="location">推荐</view>
+<button class="getLocation" size="mini" bindtap="getlocation"> 定位</button>
+<view class="hotcity"> 热门城市</view>
+<button class="btm" size="mini" wx:for="{{hotCitys}}" wx:key="index">{{item}}</button>

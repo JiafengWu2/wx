@@ -1,0 +1,87 @@
+/**index.wxss**/
+.banner{height: 338rpx;
+position: relative;}
+
+.banner swiper{height: 338rpx;}
+
+.banner image{width:100%;
+height: 338rpx;}
+.banner .swiper-item{position: relative;}
+
+.banner-info{
+  position: absolute;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #fff;
+  background-color:rgba(0,0, 0,0.5);
+  bottom:0;
+  left: 0;
+  right:0;
+  font-size:24rpx;
+  text-align: center;
+}
+.banner-number{
+  position: absolute;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #fff;
+  right: 10rpx;
+  bottom:0;
+  font-size: 28rpx;
+}
+.oneday{
+  display: flex;
+  margin:30rpx 20rpx;
+  text-align: center;
+  justify-content: space-around;
+  color:#666;
+  font-size: 26rpx;
+}
+.item image{
+  width: 306rpx;
+  height: 186rpx;
+}
+.list{
+  margin-left: 20rpx;
+  margin-right: 2orpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.title{
+  font-size: 30rpx;
+  color:#1a1a1a;
+  margin-bottom: 10rpx;
+}
+
+.list-info{
+  display: flex;
+}
+.list image{
+  width: 214rpx;
+  height: 138rpx;
+  margin-bottom: 10rpx;
+  
+}
+.info{
+  margin-left: 20rpx;
+  height: 138rpx;
+  position: relative;
+  font-size: 24rpx;
+  flex:1;  
+}
+.desc{
+  color: #666;
+  line-height: 34rpx;
+}
+.readnum{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 25rpx;
+
+}
+.readnum text{
+  color: red;
+  padding-right: 4rpx;
+}

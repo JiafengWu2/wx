@@ -1,0 +1,96 @@
+
+<view class="banner" > 
+  <swiper autoplay="true" interval="3000" circular="true" bindchange="swiperChange">
+    <!-- <swiper-item>
+    <image src="../images/banner_1.jpeg"></image>
+    <view class="banner-info">信息</view>
+    </swiper-item>
+    <swiper-item>
+    <image src="../images/banner_2.jpeg"></image>
+    <view class="banner-info">信息</view>
+    </swiper-item>
+    <swiper-item>
+    <image src="../images/banner_3.jpeg"></image>
+    <view class="banner-info">信息</view>
+    </swiper-item> -->
+    <swiper-item wx:for="{{bannerArr}}" wx:key="index">
+      <image src='{{item.image}}'> </image>
+      <view class="banner-info">{{item.title}}</view>
+
+    </swiper-item>
+  </swiper>
+
+  <view class="banner-number">{{current}}/{{bannerArr.length}}</view>
+</view>
+<view class="oneday">
+  <view class="item">
+    <image src="../images/banner_1.jpeg"></image>
+    <view>xxx</view>
+  </view>
+
+<view class="item">
+  <image src="../images/banner_2.jpeg"></image>
+  <view>xxx</view>
+</view>
+</view>
+
+<!-- <view class="wrapper">
+  <view class="list">
+  <view class="title">标题</view>
+  <view class="list-info">
+
+  <image src="../images/banner_2.jpeg"></image>
+  <view class="info">
+    <view class="desc">文字描述</view>
+    <view class="readnum"><text>231</text>次阅读</view>
+
+    </view>
+  </view>
+  </view>
+
+</view> -->
+
+
+  <!--动态获取数据
+      页面跳转<navigator>
+  
+  -->
+  <!-- <view class="list" wx:for='{{list}}' wx:key="index" bindtap="tiao" data-mark={{item.id}}> -->
+    <!-- <view class="wrapper">
+    <view class="list" wx:for='{{list}}' wx:key="index">
+    <navigator url="../detail/detail?id={{item.id}}">
+  <view class="title">{{item.title}}</view>
+  <view class="list-info">
+
+  <image src="{{item.image}}"></image>
+  <view class="info">
+    <view class="desc">{{item.desc}}</view>
+    <view class="readnum"><text>{{item.readNum}}</text>次阅读</view>
+
+    </view>
+  </view>
+</navigator>
+  </view>
+
+</view> -->
+
+<view class="wrapper">
+    <view class="list" wx:for='{{list}}' wx:key="index" bindtap="tiao" data-mark='{{item.id}}'>
+    
+  <view class="title">{{item.title}}</view>
+  <view class="list-info">
+
+  <image src="{{item.image}}"></image>
+  <view class="info">
+    <view class="desc">{{item.desc}}</view>
+    <view class="readnum"><text>{{item.readNum}}</text>次阅读</view>
+
+    </view>
+  </view>
+
+  </view>
+
+</view>
+
+
+

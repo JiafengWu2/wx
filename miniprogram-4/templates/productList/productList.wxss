@@ -1,0 +1,39 @@
+.list{
+  display: flex;
+  padding: 16rpx;
+  background: #fff;
+  margin-top: 10rpx;
+}
+.img image{
+  width: 184rpx;
+  height: 184rpx;
+  padding-right: 20rpx;
+}
+.info{
+  flex:1;
+  position: relative;
+}
+.list-title{
+  padding-bottom: 8rpx;
+}
+.list-desc{
+  color:#666;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.list-bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 24rpx;
+  color: #666;
+}
+.list-bottom text{
+  color: red;
+  padding-right: 30rpx;
+}
